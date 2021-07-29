@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_one",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_two",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_three",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Homework/AssociateProfitSplitter.sol": "AssociateProfitSplitter"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Homework/AssociateProfitSplitter.sol": {
+			"keccak256": "0x28fc4ddfcc892434024eb520149c7250883c32f88e5702b8b1037aa567d1f302",
+			"urls": [
+				"bzz-raw://f5f6ab1f388a3d85dcb9f88e7b1d00fd365c95e75c575c4eb924763563fe8cc6",
+				"dweb:/ipfs/QmNrGkzPDHuW4BsWZLqpQHQUDRkGsMULSNhWAQ2NK4mw7Q"
+			]
+		}
+	},
+	"version": 1
+}

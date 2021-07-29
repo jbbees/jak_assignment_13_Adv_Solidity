@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newMessage",
+						"type": "string"
+					}
+				],
+				"name": "setMessage",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MessageBoard.sol": "MessageBoard"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MessageBoard.sol": {
+			"keccak256": "0xcca5c48a2c91fff90ae1c1ce9792358d55ae5215212b0c70155419fa0c47603f",
+			"urls": [
+				"bzz-raw://e17d1daf45716b246491fa10c9cc33f391ba68fb1239606684b0224a21df6b12",
+				"dweb:/ipfs/QmWEze26XJrTKA7NovoNzNToH4LyStSYZuR1xHnfUsDtj8"
+			]
+		}
+	},
+	"version": 1
+}

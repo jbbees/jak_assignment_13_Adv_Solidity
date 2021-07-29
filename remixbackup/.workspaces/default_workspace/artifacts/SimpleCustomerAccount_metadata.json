@@ -1,0 +1,98 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "getInfo",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isNewAccount",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newAccountBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "newCustomerName",
+						"type": "string"
+					}
+				],
+				"name": "setInfo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SimpleCustomerAccount.sol": "SimpleCustomerAccount"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SimpleCustomerAccount.sol": {
+			"keccak256": "0x95ee133e957e80761e3c10a93cbdc48eee1d85479027ae4aefc06f876cc6c31b",
+			"urls": [
+				"bzz-raw://cd8bca7e0f776a33b881523a933b95fce583d0e76ea70250336e054a2bf41860",
+				"dweb:/ipfs/Qmdo4PqB3HtEyyJg3wcaH2RHnFwtX6F85qVqoh85vrTB2c"
+			]
+		}
+	},
+	"version": 1
+}

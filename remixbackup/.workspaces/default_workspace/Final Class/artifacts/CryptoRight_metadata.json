@@ -1,0 +1,213 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "copyright_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "reference_uri",
+						"type": "string"
+					}
+				],
+				"name": "Copyright",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "copyright_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "reference_uri",
+						"type": "string"
+					}
+				],
+				"name": "OpenSource",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "copyright_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "new_owner",
+						"type": "address"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "reference_uri",
+						"type": "string"
+					}
+				],
+				"name": "copyrightWork",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "copyrights",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "uri",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "reference_uri",
+						"type": "string"
+					}
+				],
+				"name": "openSourceWork",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "copyright_id",
+						"type": "uint256"
+					}
+				],
+				"name": "renounceCopyrightOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "copyright_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "new_owner",
+						"type": "address"
+					}
+				],
+				"name": "transferCopyrightOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Final Class/Stu_2_CryptoRight.sol": "CryptoRight"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Final Class/ICryptoRight.sol": {
+			"keccak256": "0x9bd301d5cab295c0444694c689b5b90d2073d192a241d9c6b32a0538368c15f9",
+			"urls": [
+				"bzz-raw://96f47f3d91fe15d26ec8ff0a48e7bd58a8d9c2216dcff7b78bcfe07ab696b4b9",
+				"dweb:/ipfs/QmYorkj7Ma2yVhsEpNXA8smJBLWoop7NaYi8Z7YYbm9Bt6"
+			]
+		},
+		"Final Class/Stu_2_CryptoRight.sol": {
+			"keccak256": "0xb1ab60a3fb35cddc8f0d46652762bc4da5101654333eee43ab0f1d83bc0f191e",
+			"urls": [
+				"bzz-raw://2125381b6b391099b2939f53d9939f25e3e9a9b773d239e836c8d0b262285805",
+				"dweb:/ipfs/QmZiLT3FmUZimi48A66fJdiYRj2fzNAcc7uFwAht35PrEB"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/drafts/Counters.sol": {
+			"keccak256": "0x5be8533c5950173dc2b77b75108fae6e6c5449aedadde3385ba457394aad2384",
+			"urls": [
+				"bzz-raw://d429fb04f5b31d909dc759d0f88e28055b80b4dd43e5def4dffc947fa0609229",
+				"dweb:/ipfs/QmaY9idX5CwLLtjjTQAdiiaDSrncgafkatUZXTbbajpz8b"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/math/SafeMath.sol": {
+			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
+			"urls": [
+				"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f",
+				"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq"
+			]
+		}
+	},
+	"version": 1
+}
