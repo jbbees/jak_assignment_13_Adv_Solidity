@@ -1,8 +1,10 @@
 # PupperCoin and PupperCoinSale Walkthrough
 
-In this github repo you will see two .sol files: a **PupperCoin.sol** and **Crowdsale.sol**. PupperCoin will generate our token asset. Crowdsale will generate a token sale of the asset made with PupperCoin.sol and collect the money from the buyers.
+## The Contract
 
-We will also need to make use of various OpenZeppelin libraries that we will need.
+We will be issuing a digital asset called **PupperCoin** in a crowdsale implemented on the Ethereum blockchain. Our crowdsale goal will be to receive payments in ether from buyers up to **300 ether**, and in exchange the buyers will receive **1 PupperCoin token per 1 ether spent.** Once the goal of 300 ether is met, PupperCoin tokens can no longer be purchased. The contract will finalize and mint the tokens bought to buyers. Buyers are unable to claim their tokens before the crowdsale goal is met, and if the goal is not met, and option to call the contract refund function for a refund of their ether is available. The crowdsale will last 24 weeks. Each token bough is timestamped and will distribute the token 24 weeks after that timestamp.
+
+In this github repo you will see two .sol files: a **PupperCoin.sol** and **Crowdsale.sol**. PupperCoin will generate our token asset. Crowdsale will generate a token sale of the asset made with PupperCoin.sol and collect the money from the buyers. We will also need to make use of various OpenZeppelin libraries that we will need.
 
 ## PupperCoin.sol
 
