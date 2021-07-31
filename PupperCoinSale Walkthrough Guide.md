@@ -105,17 +105,20 @@ In this github repo you will see two .sol files: a **PupperCoin.sol** and **Crow
 
 ![BuyerInfo](images/PupperCoinDeployer4.png)
 
-* Second part is going to keep track that the token sale exists. Create a new Crowdsale, set the rate of 1 ether = 1 token, update the goal of the sale by the ether we got from the buyer, and timestamp the sale, and then set the distribution of the token to 24 weeks later after sale. So If I buy 100 ether worth of tokens on 7-29-2021 at 12:00AM, I will expect to receive 100 tokens, and I won't get those token until 24 weeks have passed from that exact time. And stores the contract sale address, 
+* Second part is going to keep track that the token sale exists. Create a new Crowdsale, set the rate of 1 ether = 1 token, update the goal of the sale by the ether we got from the buyer, and timestamp the sale, and then set the distribution of the token to 24 weeks later after sale. So If I buy 100 ether worth of tokens on 7-29-2021 at 12:00AM, I will expect to receive 100 tokens, and I won't get those token until 24 weeks have passed from that exact time. And stores the contract sale address.
 
-* We also store the contract address of the token sale. 
+* We also store the contract address of the token sale.
+
 ![TokenSale](images/PupperCoinDeployer5.png)
 
-* Finally we need to re-assign token minting from the Deployer to the PupperCoinSale contract. We **addMinter** to add the minting role, and we **renounceMinter** in the Deployer. 
+* Finally we need to re-assign token minting from the Deployer to the PupperCoinSale contract. We **addMinter** to add the minting role, and we **renounceMinter** in the Deployer.
+
 ![MinterRole](images/PupperCoinDeployer6.png)
 
 ## Deploy the Contract
 
 * To set the goal of the Crowdsale, enter a number amount in **wei**. Our goal is 300 ether. That's 300000000000000000000 wei. A converter is available to copy paste the wei needed.
+
 [EthereumWeiConverter](https://eth-converter.com)
 
 ## Let's Buy Some PupperCoins
@@ -125,31 +128,43 @@ In this github repo you will see two .sol files: a **PupperCoin.sol** and **Crow
 * Make sure the buying wallet address is imported/connected to the network, and has ether in it.
 * Enter a value in **ether** that is above zero.
 * Under **Contract** select the **PupperCoin.sol**.  
+
 ![SetupBuyer](images/PupperCoins8.png)
 
 * In MetaMask, import the PupperCoin token into the **assets** tab of the wallet address. Click **Add Token**.
+
 ![AddTokens](images/PupperCoins2.png)
 
 * Paste the **token address** in the Contract Address field. It will auto-fill the remaining. Click confirm. You'll see the **PUPPR** token in wallet assets.
+
 ![ConfirmToken](images/PupperCoins3.png)
 
 * Under **Deployed Contracts** go to **PupperCoinSale**. Call the **buyTokens** function. Put the target wallet address that will be buying the tokens. Hit **Transact**.  
+
 ![buyTokens](images/PupperCoins1.png)
 
 * MetaMask will confirm the purchase.
+
 ![ConfirmBuy](images/PUP1.png)
 
 * In MetaMask, we'll see our 100 ether is gone. And we see bough 100 ETH worth of those tokens. But we will not see 100 PUPPR coins until contract is finalized.
+
 ![BoughtTokens](images/PupperCoins4.png)
 
 * If we're impatient waiting for our tokens we can call functions like **goalReached** which if met will be *True*, and to see the sale goal call the **goal** function.
+
 ![goalReached](images/PupperCoins5.png)
 
 * If we want to see if the sale is finalized call **finalized** if *False* that means we'll have to wait until it finsihes to get the tokens we bought.
+
 ![Finalized](images/PupperCoins6.png)
 
 * If you receive this error, it means the cap exceeded. The sale goal was reached. New tokens cannot be bought.
+
 ![CapExceeded](images/PupperCoins7.png)
 
 * If you want a refund call the **claimRefund** function. Paste in your wallet address and hit transact.
+
 ![Refund](images/PupperCoins9.png)
+
+> END OF DOCUMENTATION
